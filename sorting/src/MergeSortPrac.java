@@ -19,7 +19,7 @@ public class MergeSortPrac {
         }
     }
 
-    /*public static void merge(int[] arr,int[] help,int low,int m,int high)
+    public static void merge(int[] arr,int[] help,int low,int m,int high)
         {
             for(int i=low ; i<=high;i++)
             {
@@ -42,14 +42,15 @@ public class MergeSortPrac {
                 current++;
             }
 
-            int remaining = m - helpLeft;
-            for(int i = 0; i <= remaining;i++){
-                arr[current+1] = help[helpLeft+1];
+            while (helpLeft <= m) {
+                arr[current] = help[helpLeft];
+                current++;
+                helpLeft++;
             }
 
-    }*/
+    }
 
-    public static void merge(int[] array,int[] help,int low,int m,int high) {
+   /* public static void merge(int[] array,int[] help,int low,int m,int high) {
 
         for (int i = low; i <= high; i++) {
             help[i] = array[i];
@@ -74,6 +75,6 @@ public class MergeSortPrac {
         }
 
     }
-
+*/
 
 }
